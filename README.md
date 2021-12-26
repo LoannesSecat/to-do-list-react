@@ -1,3 +1,19 @@
+### ---
+## Nombre del proyecto: to-do-list.
+## Descripción: Este proyecto es una lista de chequeo sencilla.
+## Recursos utilizados: 
+# 1. React/ReactJS
+# 2. LocalStorage (Donde se almacenan las tareas)
+# 3. Boostrap (En el diseño)
+# 4. react-toastify (dependencia para las alertas)
+## ¿Cómo funciona?
+Al ejecutar el proyecto se va a mostrar la página principal donde podremos agregar una nueva tarea, cada tarea tendrá su opción de poderse eliminar o modificar.
+
+NOTA: SI ELIMINAS LA CACHÉ DEL NAVEGADOR DONDE LO ESTÁS EJECUTANDO SE VAN A ELIMINAR TODAS TUS TAREAS QUE TENGAS GUARDADAS, MIENTRAS ESTO NO SUCEDA LOS DATOS VAN A ESTAR SIEMPRE GUARDADOS.
+### ---
+
+### INDICACIONES DE CREATE-REACT-APP
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

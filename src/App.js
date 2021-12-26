@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from "react";
+import InputToDo from "./components/InputToDo";
+import ListToDo from "./components/ListToDo";
+import { TaskProvider } from "./contexts/TaskContext";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Fragment>
+      <ToastContainer />
+
+      <TaskProvider>
+      <h2 className="text-center mt-5 text-uppercase fw-bolder">Lista de actividades</h2>
+        <div className="container mt-5">
+          <InputToDo />
+          <ListToDo />
+        </div>
+      </TaskProvider>
+    </Fragment>
+  )
 }
 
 export default App;
