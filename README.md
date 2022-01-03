@@ -2,12 +2,12 @@
 # Nombre del proyecto: to-do-list.
 # Descripción: Este proyecto es una lista de chequeo sencilla.
 # Recursos utilizados: 
- 1. React/ReactJS
- 2. LocalStorage (Donde se almacenan las tareas)
- 3. Boostrap (En el diseño)
- 4. react-toastify (dependencia para las alertas)
- 5. createContext(hook de react)
- 6. useContext(hook de react
+ 1. React/ReactJS.
+ 2. LocalStorage (Donde se almacenan las tareas).
+ 3. Boostrap (En el diseño).
+ 4. react-toastify (dependencia para las alertas).
+ 5. createContext(hook de react).
+ 6. useContext(hook de react.
 # ¿Cómo funciona?
 Al ejecutar el proyecto se va a mostrar la página principal donde podremos agregar una nueva tarea, cada tarea tendrá su opción de poderse eliminar o modificar.
 
