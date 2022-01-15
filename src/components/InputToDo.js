@@ -1,9 +1,9 @@
 import React, { Fragment, useContext, useState } from "react";
 import { useEffect } from "react/cjs/react.development";
-import taskContext from "../contexts/TaskContext";
+import TaskContext from "../contexts/TaskContext";
 
 const InputToDo = () => {
-    const { createData, options, updateData, changeInputText, emptyValue } = useContext(taskContext);
+    const { createData, options, updateData, changeInputText, emptyValue } = useContext(TaskContext);
     const
         initialText = "",
         thereAreEditValues = () => {
@@ -17,7 +17,7 @@ const InputToDo = () => {
         handleOnChange = (e) => setText(e),
         handleSubmit = () => {
             if (text === "" || text === " " || text === undefined) {
-                emptyValue()
+                emptyValue();
             } else {
                 if (thereAreEditValues()) {
                     updateData({ key: options.editValues.key, task: text });
@@ -36,6 +36,8 @@ const InputToDo = () => {
 
     return (
         <Fragment>
+            <h2 className="text-center mb-5 mt-5 text-uppercase fw-bolder">Lista de actividades</h2>
+
             <div className="row mb-5">
                 <textarea
                     placeholder="Tarea"
@@ -44,10 +46,11 @@ const InputToDo = () => {
                     className="col-9 me-5"
                     onChange={(e) => handleOnChange(e.target.value)}
                     value={text}
+                    style={{ resize: "none", height: "80px" }}
                 />
                 <button
                     onClick={() => handleSubmit()}
-                    className="col btn btn-primary"
+                    className="col btn btn-primary align-self-center"
                     type="button"
                 >{thereAreEditValues() ? "Editar tarea" : "Agregar tarea"}</button>
             </div>

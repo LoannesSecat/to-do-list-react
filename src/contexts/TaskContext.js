@@ -2,7 +2,7 @@ import { createContext, useState } from "react";
 import Crud from "../storage/Crud";
 import { toast } from 'react-toastify';
 
-const taskContext = createContext();
+const TaskContext = createContext();
 
 const initialTasksList = Crud({ action: "read" });
 
@@ -47,7 +47,7 @@ const TaskProvider = ({ children }) => {
         data = {
             tasks,
             createData,
-            /*     readData, */
+            readData,
             updateData,
             deleteData,
             options,
@@ -56,11 +56,11 @@ const TaskProvider = ({ children }) => {
         }
 
     return (
-        <taskContext.Provider value={data}>
+        <TaskContext.Provider value={data}>
             {children}
-        </taskContext.Provider>
+        </TaskContext.Provider>
     )
 }
 
 export { TaskProvider }
-export default taskContext;
+export default TaskContext;
