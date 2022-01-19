@@ -7,6 +7,7 @@ Este proyecto es una lista de chequeo sencilla.
 2. LocalStorage (Donde se almacenan las tareas)
 3. Boostrap (En el diseño)
 4. react-toastify (dependencia para las alertas)
+5. createContext/useContext (Para el manejo de los datos globalmente entre componentes)
 ### `¿Cómo funciona?`
 Al ejecutar el proyecto se va a mostrar la página principal donde podremos agregar una nueva tarea, cada tarea tendrá su opción de poderse eliminar o modificar.
 
