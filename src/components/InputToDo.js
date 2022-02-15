@@ -1,4 +1,4 @@
-import React, { Fragment, useContext, useState } from "react";
+import React, { useContext, useState } from "react";
 import { useEffect } from "react/cjs/react.development";
 import TaskContext from "../contexts/TaskContext";
 
@@ -35,26 +35,24 @@ const InputToDo = () => {
     }, [options.editValues]);
 
     return (
-        <Fragment>
-            <h2 className="text-center mb-5 mt-5 text-uppercase fw-bolder">Lista de actividades</h2>
+        <div className="input-todo">
+            <h2>Lista de actividades</h2>
 
-            <div className="row mb-5">
+            <div>
                 <textarea
-                    placeholder="Tarea"
+                    placeholder="Escribir tarea"
                     name="input_task"
                     type="text"
-                    className="col-9 me-5"
                     onChange={(e) => handleOnChange(e.target.value)}
                     value={text}
-                    style={{ resize: "none", height: "80px" }}
                 />
                 <button
                     onClick={() => handleSubmit()}
-                    className="col btn btn-primary align-self-center"
+                    className="btn btn-primary"
                     type="button"
                 >{thereAreEditValues() ? "Editar tarea" : "Agregar tarea"}</button>
             </div>
-        </Fragment>
+        </div>
     )
 }
 

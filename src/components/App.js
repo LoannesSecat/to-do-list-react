@@ -4,6 +4,7 @@ import ListToDo from "./ListToDo";
 import { TaskProvider } from "../contexts/TaskContext";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import "../utils/Styles.scss"
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <ToastContainer />
 
       <TaskProvider>
-        <div className="container">
+        <div className="app">
           <InputToDo />
           <ListToDo />
         </div>

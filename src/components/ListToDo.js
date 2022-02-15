@@ -1,4 +1,4 @@
-import React, { useContext, Fragment } from "react";
+import React, { useContext } from "react";
 import TaskContext from "../contexts/TaskContext";
 
 const ListToDo = () => {
@@ -8,20 +8,20 @@ const ListToDo = () => {
         eS = tasksList.length > 1 ? "s" : null;
 
     if (!tasksList.length) {
-        return (<h4 className="text-center">Sin tareas por ahora</h4>)
+        return (<h4>Sin tareas por ahora</h4>)
     } else {
         return (
-            <Fragment>
-                <div className="row" style={{ maxHeight: "55vh", overflowY: "auto", overflowX: "auto" }}>
+            <div className="list-todo">
+                <div className="mapper">
                     {
                         tasksList.map(item => (
-                            <div key={item.key} className="row align-items-center mb-3 ps-0">
-                                <span className="col-10 text-break">{item.task}</span>
+                            <div key={item.key}>
+                                <span>{item.task}</span>
 
-                                <div className="col-2 text-center">
+                                <div>
                                     <button
                                         type="button"
-                                        className="btn btn-warning me-3"
+                                        className="btn btn-warning"
                                         onClick={() => changeInputText(item)}
                                         disabled={options.editDisable}
                                     >
@@ -41,8 +41,8 @@ const ListToDo = () => {
                     }
                 </div>
 
-                <div className="fw-light text-end mt-3 mb-2">Tiene {tasksList.length} tarea{eS} pendiente{eS}</div>
-            </Fragment>
+                <span>Tiene {tasksList.length} tarea{eS} pendiente{eS}</span>
+            </div>
         )
     }
 }
