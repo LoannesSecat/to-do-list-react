@@ -12,6 +12,8 @@ Este proyecto es una lista de chequeo sencilla.
 Al ejecutar el proyecto se va a mostrar la página principal donde podremos agregar una nueva tarea, cada tarea tendrá su opción de poderse eliminar o modificar.
 
 `NOTA: SI ELIMINAS LA CACHÉ DEL NAVEGADOR DONDE LO ESTÁS EJECUTANDO SE VAN A ELIMINAR TODAS TUS TAREAS QUE TENGAS GUARDADAS, MIENTRAS ESTO NO SUCEDA LOS DATOS VAN A ESTAR SIEMPRE GUARDADOS.`
+
+Link del sitio: https://LoannesSecat.github.io/to-do-list-react
 #
 #
 #
