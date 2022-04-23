@@ -1,5 +1,4 @@
-import React, { useContext, useState } from "react";
-import { useEffect } from "react/cjs/react.development";
+import { useContext, useState, useEffect } from "react";
 import TaskContext from "../contexts/TaskContext";
 
 const InputToDo = () => {
