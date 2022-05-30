@@ -7,6 +7,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import "../utils/Styles.scss"
 
 function App() {
+  console.log(location);
+  
   return (
     <Fragment>
       <ToastContainer />
