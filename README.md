@@ -20,8 +20,6 @@ Al ejecutar el proyecto se va a mostrar la página principal donde podremos agre
 
 `NOTA: SI ELIMINAS LA CACHÉ DEL NAVEGADOR DONDE LO ESTÁS EJECUTANDO SE VAN A ELIMINAR TODAS TUS TAREAS QUE TENGAS GUARDADAS, MIENTRAS ESTO NO SUCEDA LOS DATOS VAN A ESTAR SIEMPRE GUARDADOS.`
 
-Link del sitio: https://loannessecat.github.io/to-do-list-react
-
 #
 
 #
